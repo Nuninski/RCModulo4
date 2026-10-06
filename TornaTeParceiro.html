@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rota Express - Sobre & Parceiros</title>
+
+    <!-- Ligação ao CSS -->
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/shoppingcart_77968.ico">
+</head>
+<body>
+
+    <header>
+
+        <!-- LOGOTIPO ROTA EXPRESS -->
+        <img src="images/Rota_Express.png" alt="Logo Rota Express" class="logo">
+        <nav>
+            <a href="home.html">Início</a>
+            <a href="#">Explorar</a>
+            <a href="#">Pedidos</a>
+            <a href="TornaTeParceiro.html">Torna-te Parceiro</a>
+            <a href="#">Perfil</a>
+            
+            <!-- Link do Carrinho com o ícone .ico -->
+            <a href="#" class="cart-link">
+                <img src="images/shoppingcart_77968.ico" alt="Ícone Carrinho" class="cart-icon">
+                Carrinho
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- SOBRE NÓS / MISSÃO DA EMPRESA -->
+        <section class="about-mission">
+            <h1>Sobre a Rota Express</h1>
+            <p>
+                A nossa missão é conectar pessoas aos seus estabelecimentos e sabores favoritos com a maior agilidade, eficiência e proximidade possível. Acreditamos no apoio ao comércio local, capacitando restaurantes e lojas de bairro com uma infraestrutura de entregas rápida, transparente e acessível.
+            </p>
+        </section>
+
+        <!-- SECÇÃO DE FORMULÁRIOS DE PARCERIA -->
+        <section class="partner-section">
+            
+            <!-- FORMULÁRIO 1: ESTAFETAS -->
+            <div class="partner-card">
+                <h2>Torna-te Estafeta 🚴‍♂️</h2>
+                <p>Ganha dinheiro com horários flexíveis. Faz entregas na tua cidade e junta-te à nossa equipa.</p>
+                
+                <form action="#" method="POST" class="partner-form">
+                    <label for="nome-estafeta">Nome Completo:</label>
+                    <input type="text" id="nome-estafeta" name="nome" placeholder="O teu nome" required>
+
+                    <label for="email-estafeta">E-mail:</label>
+                    <input type="email" id="email-estafeta" name="email" placeholder="exemplo@email.com" required>
+
+                    <label for="telefone-estafeta">Telemóvel:</label>
+                    <input type="tel" id="telefone-estafeta" name="telefone" placeholder="912 345 678" required>
+
+                    <label for="veiculo">Meio de Transporte:</label>
+                    <select id="veiculo" name="veiculo" required>
+                        <option value="" disabled selected>Seleciona uma opção</option>
+                        <option value="bicicleta">Bicicleta</option>
+                        <option value="mpt">Moto / Moped</option>
+                        <option value="carro">Carro</option>
+                        <option value="trotinete">Trotinete Elétrica</option>
+                    </select>
+
+                    <label for="cidade-estafeta">Cidade de Atuação:</label>
+                    <input type="text" id="cidade-estafeta" name="cidade" placeholder="Ex: Lisboa, Porto..." required>
+
+                    <button type="submit">Quero ser Estafeta</button>
+                </form>
+            </div>
+
+            <!-- FORMULÁRIO 2: ESTABELECIMENTOS COMERCIAIS / RESTAURANTES -->
+            <div class="partner-card">
+                <h2>Regista o teu Estabelecimento 🏬</h2>
+                <p>Aumenta as tuas vendas e alcança milhares de novos clientes na tua região.</p>
+                
+                <form action="#" method="POST" class="partner-form">
+                    <label for="nome-comercio">Nome do Estabelecimento / Restaurante:</label>
+                    <input type="text" id="nome-comercio" name="nome_comercio" placeholder="Ex: Pizzaria Bella" required>
+
+                    <label for="tipo-comercio">Categoria:</label>
+                    <select id="tipo-comercio" name="tipo_comercio" required>
+                        <option value="" disabled selected>Seleciona o tipo de negócio</option>
+                        <option value="restaurante">Restaurante / Snack-Bar</option>
+                        <option value="padaria">Padaria / Pastelaria</option>
+                        <option value="supermercado">Supermercado / Mercearia</option>
+                        <option value="outros">Outro tipo de loja</option>
+                    </select>
+
+                    <label for="responsavel">Nome do Responsável:</label>
+                    <input type="text" id="responsavel" name="responsavel" placeholder="O teu nome" required>
+
+                    <label for="email-comercio">E-mail de Contacto:</label>
+                    <input type="email" id="email-comercio" name="email_comercio" placeholder="contacto@empresa.com" required>
+
+                    <label for="telefone-comercio">Telemóvel / Telefone:</label>
+                    <input type="tel" id="telefone-comercio" name="telefone_comercio" placeholder="210 000 000" required>
+
+                    <label for="morada-comercio">Morada do Estabelecimento:</label>
+                    <input type="text" id="morada-comercio" name="morada_comercio" placeholder="Rua, Número, Cidade" required>
+
+                    <button type="submit">Registar Parceiro</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Ligação ao JS -->
+    <script src="main.js"></script>
+</body>
+</html>
